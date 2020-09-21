@@ -1,0 +1,318 @@
+{
+  "storage": [
+      {
+          "astId": 132,
+          "contract": "cryptokitties.sol:KittyCore",
+          "label": "ceoAddress",
+          "offset": 0,
+          "slot": "0",
+          "type": "t_address"
+      },
+      {
+          "astId": 134,
+          "contract": "cryptokitties.sol:KittyCore",
+          "label": "cfoAddress",
+          "offset": 0,
+          "slot": "1",
+          "type": "t_address_payable"
+      },
+      {
+          "astId": 136,
+          "contract": "cryptokitties.sol:KittyCore",
+          "label": "cooAddress",
+          "offset": 0,
+          "slot": "2",
+          "type": "t_address"
+      },
+      {
+          "astId": 139,
+          "contract": "cryptokitties.sol:KittyCore",
+          "label": "paused",
+          "offset": 20,
+          "slot": "2",
+          "type": "t_bool"
+      },
+      {
+          "astId": 381,
+          "contract": "cryptokitties.sol:KittyCore",
+          "label": "cooldowns",
+          "offset": 0,
+          "slot": "3",
+          "type": "t_array(t_uint32)14_storage"
+      },
+      {
+          "astId": 384,
+          "contract": "cryptokitties.sol:KittyCore",
+          "label": "secondsPerBlock",
+          "offset": 0,
+          "slot": "5",
+          "type": "t_uint256"
+      },
+      {
+          "astId": 387,
+          "contract": "cryptokitties.sol:KittyCore",
+          "label": "kitties",
+          "offset": 0,
+          "slot": "6",
+          "type": "t_array(t_struct(Kitty)334_storage)dyn_storage"
+      },
+      {
+          "astId": 391,
+          "contract": "cryptokitties.sol:KittyCore",
+          "label": "kittyIndexToOwner",
+          "offset": 0,
+          "slot": "7",
+          "type": "t_mapping(t_uint256,t_address)"
+      },
+      {
+          "astId": 395,
+          "contract": "cryptokitties.sol:KittyCore",
+          "label": "ownershipTokenCount",
+          "offset": 0,
+          "slot": "8",
+          "type": "t_mapping(t_address,t_uint256)"
+      },
+      {
+          "astId": 399,
+          "contract": "cryptokitties.sol:KittyCore",
+          "label": "kittyIndexToApproved",
+          "offset": 0,
+          "slot": "9",
+          "type": "t_mapping(t_uint256,t_address)"
+      },
+      {
+          "astId": 403,
+          "contract": "cryptokitties.sol:KittyCore",
+          "label": "sireAllowedToAddress",
+          "offset": 0,
+          "slot": "10",
+          "type": "t_mapping(t_uint256,t_address)"
+      },
+      {
+          "astId": 405,
+          "contract": "cryptokitties.sol:KittyCore",
+          "label": "saleAuction",
+          "offset": 0,
+          "slot": "11",
+          "type": "t_contract(SaleClockAuction)2931"
+      },
+      {
+          "astId": 407,
+          "contract": "cryptokitties.sol:KittyCore",
+          "label": "siringAuction",
+          "offset": 0,
+          "slot": "12",
+          "type": "t_contract(SiringClockAuction)2749"
+      },
+      {
+          "astId": 701,
+          "contract": "cryptokitties.sol:KittyCore",
+          "label": "erc721Metadata",
+          "offset": 0,
+          "slot": "13",
+          "type": "t_contract(ERC721Metadata)689"
+      },
+      {
+          "astId": 1242,
+          "contract": "cryptokitties.sol:KittyCore",
+          "label": "autoBirthFee",
+          "offset": 0,
+          "slot": "14",
+          "type": "t_uint256"
+      },
+      {
+          "astId": 1244,
+          "contract": "cryptokitties.sol:KittyCore",
+          "label": "pregnantKitties",
+          "offset": 0,
+          "slot": "15",
+          "type": "t_uint256"
+      },
+      {
+          "astId": 1246,
+          "contract": "cryptokitties.sol:KittyCore",
+          "label": "geneScience",
+          "offset": 0,
+          "slot": "16",
+          "type": "t_contract(GeneScienceInterface)126"
+      },
+      {
+          "astId": 3176,
+          "contract": "cryptokitties.sol:KittyCore",
+          "label": "promoCreatedCount",
+          "offset": 0,
+          "slot": "17",
+          "type": "t_uint256"
+      },
+      {
+          "astId": 3178,
+          "contract": "cryptokitties.sol:KittyCore",
+          "label": "gen0CreatedCount",
+          "offset": 0,
+          "slot": "18",
+          "type": "t_uint256"
+      },
+      {
+          "astId": 3320,
+          "contract": "cryptokitties.sol:KittyCore",
+          "label": "newContractAddress",
+          "offset": 0,
+          "slot": "19",
+          "type": "t_address"
+      }
+  ],
+  "types": {
+      "t_address": {
+          "encoding": "inplace",
+          "label": "address",
+          "numberOfBytes": "20"
+      },
+      "t_address_payable": {
+          "encoding": "inplace",
+          "label": "address payable",
+          "numberOfBytes": "20"
+      },
+      "t_array(t_struct(Kitty)334_storage)dyn_storage": {
+          "base": "t_struct(Kitty)334_storage",
+          "encoding": "dynamic_array",
+          "label": "struct KittyBase.Kitty[]",
+          "numberOfBytes": "32"
+      },
+      "t_array(t_uint32)14_storage": {
+          "base": "t_uint32",
+          "encoding": "inplace",
+          "label": "uint32[14]",
+          "numberOfBytes": "64"
+      },
+      "t_bool": {
+          "encoding": "inplace",
+          "label": "bool",
+          "numberOfBytes": "1"
+      },
+      "t_contract(ERC721Metadata)689": {
+          "encoding": "inplace",
+          "label": "contract ERC721Metadata",
+          "numberOfBytes": "20"
+      },
+      "t_contract(GeneScienceInterface)126": {
+          "encoding": "inplace",
+          "label": "contract GeneScienceInterface",
+          "numberOfBytes": "20"
+      },
+      "t_contract(SaleClockAuction)2931": {
+          "encoding": "inplace",
+          "label": "contract SaleClockAuction",
+          "numberOfBytes": "20"
+      },
+      "t_contract(SiringClockAuction)2749": {
+          "encoding": "inplace",
+          "label": "contract SiringClockAuction",
+          "numberOfBytes": "20"
+      },
+      "t_mapping(t_address,t_uint256)": {
+          "encoding": "mapping",
+          "key": "t_address",
+          "label": "mapping(address => uint256)",
+          "numberOfBytes": "32",
+          "value": "t_uint256"
+      },
+      "t_mapping(t_uint256,t_address)": {
+          "encoding": "mapping",
+          "key": "t_uint256",
+          "label": "mapping(uint256 => address)",
+          "numberOfBytes": "32",
+          "value": "t_address"
+      },
+      "t_struct(Kitty)334_storage": {
+          "encoding": "inplace",
+          "label": "struct KittyBase.Kitty",
+          "members": [
+              {
+                  "astId": 319,
+                  "contract": "cryptokitties.sol:KittyCore",
+                  "label": "genes",
+                  "offset": 0,
+                  "slot": "0",
+                  "type": "t_uint256"
+              },
+              {
+                  "astId": 321,
+                  "contract": "cryptokitties.sol:KittyCore",
+                  "label": "birthTime",
+                  "offset": 0,
+                  "slot": "1",
+                  "type": "t_uint64"
+              },
+              {
+                  "astId": 323,
+                  "contract": "cryptokitties.sol:KittyCore",
+                  "label": "cooldownEndBlock",
+                  "offset": 8,
+                  "slot": "1",
+                  "type": "t_uint64"
+              },
+              {
+                  "astId": 325,
+                  "contract": "cryptokitties.sol:KittyCore",
+                  "label": "matronId",
+                  "offset": 16,
+                  "slot": "1",
+                  "type": "t_uint32"
+              },
+              {
+                  "astId": 327,
+                  "contract": "cryptokitties.sol:KittyCore",
+                  "label": "sireId",
+                  "offset": 20,
+                  "slot": "1",
+                  "type": "t_uint32"
+              },
+              {
+                  "astId": 329,
+                  "contract": "cryptokitties.sol:KittyCore",
+                  "label": "siringWithId",
+                  "offset": 24,
+                  "slot": "1",
+                  "type": "t_uint32"
+              },
+              {
+                  "astId": 331,
+                  "contract": "cryptokitties.sol:KittyCore",
+                  "label": "cooldownIndex",
+                  "offset": 28,
+                  "slot": "1",
+                  "type": "t_uint16"
+              },
+              {
+                  "astId": 333,
+                  "contract": "cryptokitties.sol:KittyCore",
+                  "label": "generation",
+                  "offset": 30,
+                  "slot": "1",
+                  "type": "t_uint16"
+              }
+          ],
+          "numberOfBytes": "64"
+      },
+      "t_uint16": {
+          "encoding": "inplace",
+          "label": "uint16",
+          "numberOfBytes": "2"
+      },
+      "t_uint256": {
+          "encoding": "inplace",
+          "label": "uint256",
+          "numberOfBytes": "32"
+      },
+      "t_uint32": {
+          "encoding": "inplace",
+          "label": "uint32",
+          "numberOfBytes": "4"
+      },
+      "t_uint64": {
+          "encoding": "inplace",
+          "label": "uint64",
+          "numberOfBytes": "8"
+      }
+  }
+}
